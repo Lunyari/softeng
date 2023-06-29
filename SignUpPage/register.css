@@ -10,8 +10,9 @@ body{
 h1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    height: 5vh;
+    color: #e9f4fb;
 }
 
 .loginbox{
