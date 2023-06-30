@@ -28,6 +28,12 @@ img{
     height: 50vh;
 }
 
+.image-container a{
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+
+}
 .image-container input{
     flex: 1;
     width: 100px;
@@ -36,6 +42,5 @@ img{
     border: none;
     background: none;
     cursor: pointer;
-    margin: 10px;
 }
  
