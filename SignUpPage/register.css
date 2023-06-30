@@ -33,14 +33,14 @@ img{
     margin: 0 auto 20px;
 }
 
-.loginbox h1{
+.signUpbox h1{
     color: white;
     text-align: center;
     padding: 0 0 10px 0;
     
 }
 
-.loginbox form{
+.signUpbox form{
     padding: 0 40px;
     box-sizing: border-box;
 }
