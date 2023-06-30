@@ -21,15 +21,21 @@ img{
     display: block;
     margin: 0 auto 20px;
 }
-.image_container{
+.image-container{
     display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 50vh;
 }
 
-.image_container input{
+.image-container input{
     flex: 1;
-    max-width: 100%;
-    height: auto;
+    width: 100px;
+    height: 500px;
+    object-fit: fill;
     border: none;
     background: none;
     cursor: pointer;
+    margin: 10px;
 }
+ 
