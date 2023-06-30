@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    background-image: url("loginBg.png");
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 5vh;
+    color: #e9f4fb;
+}
+.box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        background: rgba(110, 109, 109, 0.481);
+        border-radius: 10px; 
+}
+img{
+    width: 300px;
+    height: auto;
+    align-items: center;
+    display: block;
+    margin: 0 auto 20px;
+}
+.getStartedBox h1{
+    color: white;
+    text-align: center;
+    padding: 0 0 10px 0;
+    
+}
+.box form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}

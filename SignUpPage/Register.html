@@ -2,14 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Party Register</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="register.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <p>Register Page</p>
-    
+    <img src="nexusParty.png" alt="Nexus Party">
+    <div class="signUpbox">
+        <h1>Sign Up</h1>
+        
+        <form method="post">
+            <div class="txtField">
+                <input type="text" id="email" name="email" required>
+                <span></span>
+                <label>Email</label>
+            </div>
 
-    </h2>
-    
+            <div class="txtField">
+                <input type="text" id="username" name="username" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+
+            <div class="txtField">
+                <input type="text" id="password" name="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+
+            <div class="txtField">
+                <input type="text" id="retypePassword" name="retypePassword" required>
+                <span></span>
+                <label>Retype Password</label>
+            </div>
+            <input type="submit" value="Sign Up">
+            
+        </form>
+    </div>
 </body>
 </html>
