@@ -17,7 +17,9 @@
     <div class="signUpbox">
         <h1>Sign Up</h1>
         
-        <form method="post">
+        <form method="" id = "registerForm">
+            <div class="alert">Your Account has been Created</div>
+            
             <div class="txtField">
                 <input type="text" id="email" name="email" required>
                 <span></span>
@@ -35,15 +37,13 @@
                 <span></span>
                 <label>Password</label>
             </div>
-
-            <div class="txtField">
-                <input type="text" id="retypePassword" name="retypePassword" required>
-                <span></span>
-                <label>Retype Password</label>
-            </div>
+            
             <input type="submit" value="Sign Up">
             
         </form>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>   
+    <script src="./register.js"></script>
 </body>
 </html>
