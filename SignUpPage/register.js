@@ -26,6 +26,11 @@ const firebaseConfig = {
     var username = getElementVal('username');
     var password = getElementVal('password');
 
+    if(validateEmail(email) == false || validatePassword(password) == false){
+        alert("Invalid Email or Password")
+        return;
+    }
+
     saveData(email,username,password);
 
     document.querySelector(".alert").style.display = "block";
@@ -35,6 +40,24 @@ const firebaseConfig = {
     }, 3000);
 
     document.getElementById('registerForm').reset()
+  }
+
+  function validateEmail(email){
+    format = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if(format.test(email) == true){
+        return true
+    } else {
+        return false
+    }
+  }
+
+  function validatePassword(password){
+    if (password < 6){
+        
+        return false
+    } else{
+        return true
+    }
   }
 
 
