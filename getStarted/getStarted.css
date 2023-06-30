@@ -13,15 +13,7 @@ h1{
     height: 5vh;
     color: #e9f4fb;
 }
-.box{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 400px;
-        background: rgba(110, 109, 109, 0.481);
-        border-radius: 10px; 
-}
+
 img{
     width: 300px;
     height: auto;
@@ -29,13 +21,12 @@ img{
     display: block;
     margin: 0 auto 20px;
 }
-.getStartedBox h1{
-    color: white;
-    text-align: center;
-    padding: 0 0 10px 0;
-    
+.image_container{
+    display: flex;
 }
-.box form{
-    padding: 0 40px;
-    box-sizing: border-box;
+
+.image_container image{
+    flex: 1;
+    max-width: 100%;
+    height: auto;
 }
