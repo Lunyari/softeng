@@ -2,10 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>League Of Legends</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <img src="nexusParty.png" alt="Nexus Party">
+    <div class="loginbox">
+        <h1>Login</h1>
+            <div class="txtField">
+                <input type="text" id="IGN" name="IGN" required>
+                <span></span>
+                <label>Enter IGN(In Game Name)</label>
+            </div>
+
+            <div class="txtField">
+                <h1>Enter Rank</h1>
+                <input list="rank" name ="rank" required>
+                <datalist id="roles">
+                    <option value="Iron">
+                    <option value="Bronze">
+                    <option value="Silver">
+                    <option value="Gold">
+                    <option value="Platinum">
+                    <option value="Diamond">
+                    <option value="Master">
+                    <option value="Grandmaster">
+                    <option value="Challenger">
+                </datalist>
+               
+            </div>
+
+            <div class="txtField">
+                <h1>Role</h1>
+                <input list="roles" name="roles">
+                    <datalist id="roles">
+                        <option value="Carry">
+                        <option value="Support">
+                    </datalist>
+            </div>
+
+            <div class="pass">Forgot Password?</div>
+            <button onclick="login()">Login</button>
+            <div class="signupLink">
+                <p><a href="Register.html">Sign Up</a> to get started</p>
+            </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>   
+    <script src="./getStarted.js"></script>
+
 </body>
 </html>
