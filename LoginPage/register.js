@@ -45,14 +45,16 @@ function register () {
     var user_data = {
       email : email,
       password : password,
+      username : username,
       last_login : Date.now()
     }
 
     // Push to Firebase Database
     database_ref.child('users/' + user.uid).set(user_data)
 
-    // DOne
-    alert('User Created!!')
+    // Done
+    alert("Account Registered")
+    window.location.href = 'login.html';
   })
   .catch(function(error) {
     // Firebase will use this to alert of its errors
