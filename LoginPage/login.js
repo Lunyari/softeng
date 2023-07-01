@@ -1,14 +1,13 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyC57Ph0aBB7V07w1eeuojP5NN5KSF43HKw",
-    authDomain: "nexusparty.firebaseapp.com",
-    databaseURL: "https://nexusparty-default-rtdb.firebaseio.com",
-    projectId: "nexusparty",
-    storageBucket: "nexusparty.appspot.com",
-    messagingSenderId: "263956260738",
-    appId: "1:263956260738:web:0ad730fe7effc588e5919b",
-    measurementId: "G-F97497CMSL"
+    apiKey: "AIzaSyBPM-Pgq6hPbzPMM248Yse_NWaK77hafEQ",
+    authDomain: "nexusparty2.firebaseapp.com",
+    databaseURL: "https://nexusparty2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "nexusparty2",
+    storageBucket: "nexusparty2.appspot.com",
+    messagingSenderId: "519037865222",
+    appId: "1:519037865222:web:a9530ef350524213dd6287",
+    measurementId: "G-GJQM7VP1C4"
   };
-  
   
     // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
