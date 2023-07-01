@@ -2,19 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Started</title>
-    <link rel="stylesheet" type="text/css" href="getStarted.css"/>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <img src="nexusParty.png" alt="Nexus Party">
-    <div class = "getStartedBox">
-        <h1>Choose Game</h1>
-            <div class = "image-container">
-                <a href="league.html"><img src="league.jpg" alt="image Button1"> </a>
-                <a href="valorant.html"><img src="valorant.jpg" alt="image Button2"> </a>
-                <a href="csgo.html"><img src="csgo.jpg" alt="image Button3"> </a>
+    <div class="loginbox">
+        <h1>Login</h1>
+            <div class="txtField">
+                <input type="text" id="email" name="email" required>
+                <span></span>
+                <label>Email</label>
+            </div>
+
+            <div class="txtField">
+                <input type="password" id="password" name="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+
+            <div class="pass">Forgot Password?</div>
+            <button onclick="login()">Login</button>
+            <div class="signupLink">
+                <p><a href="Register.html">Sign Up</a> to get started</p>
             </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>   
+    <script src="./login.js"></script>
+
 </body>
 </html>
