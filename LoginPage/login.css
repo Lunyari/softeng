@@ -32,12 +32,12 @@ img{
     
 }
 
-.loginbox form{
+.loginbox {
     padding: 0 40px;
     box-sizing: border-box;
 }
 
-form .txtField{
+.txtField{
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 30px 0;

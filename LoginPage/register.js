@@ -26,7 +26,7 @@ function register () {
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
-    alert('Email or Password is Outta Line!!')
+    alert('Invalid Email or Password')
     return
     // Don't continue running the code
   }
@@ -87,15 +87,5 @@ function validate_password(password) {
   }
 }
 
-function validate_field(field) {
-  if (field == null) {
-    return false
-  }
 
-  if (field.length <= 0) {
-    return false
-  } else {
-    return true
-  }
-}
 
