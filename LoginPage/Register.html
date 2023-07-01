@@ -17,7 +17,7 @@
     <div class="signUpbox">
         <h1>Sign Up</h1>
         
-        <form method="" id = "registerForm">
+        
             <div class="alert">Your Account has been Created</div>
 
             <div class="txtField">
@@ -37,13 +37,14 @@
                 <span></span>
                 <label>Password</label>
             </div>
-            
-            <input type="submit" value="Sign Up">
-            
-        </form>
+                <button onclick="register()">Sign Up</button>
+       
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>   
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>   
     <script src="./register.js"></script>
 </body>
+
+
 </html>
