@@ -22,6 +22,9 @@ function register () {
   email = document.getElementById('email').value
   password = document.getElementById('password').value
   username = document.getElementById('username').value
+  game = document.getElementById('game').value
+  role = document.getElementById('role').value
+  rank = document.getElementById('rank').value
   
   
 
@@ -47,6 +50,9 @@ function register () {
       email : email,
       password : password,
       username : username,
+      game : game,
+      role : role,
+      rank : rank,
       last_login : Date.now()
     }
 
