@@ -3,40 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="leagueDisplay.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
     <title>League of Legends Users</title>
 </head>
 <body>
     <img src="nexusParty.png" alt="Nexus Party">
     <div class="userList">
-        <input type="text" class="form-control mb-5 p-3" name="searchBar" id="searchBar">
-        <div class="userContainer">
-            <p class="username">Username</p>
-            <span></span>
-            <p class="rank">Rank</p>
-            <span></span>
-            <p class="role">Role</p>
-            <span></span>
-            
-        </div>
+        
+        <div class="userList">
+        
+            <input type="text" name="searchBar" id="searchBar">
     
-        <div class="userContainer2">
-            <p class="username">Username</p>
-            <span></span>
-            <p class="rank">Rank</p>
-            <span></span>
-            <p class="role">Role</p>
-            <span></span>
-            
-        </div>
-    
-        <div class="userContainer3">
-            <p class="username">Username</p>
-            <span></span>
-            <p class="rank">Rank</p>
-            <span></span>
-            <p class="role">Role</p>
-            <span></span>
-            
+            <div class="userContainer" id="userContainer1">
+                <p class="username">Username</p>
+                <span id="username1"></span>
+                <p class="rank">Rank</p>
+                <span id="rank1"></span>
+                <p class="role">Role</p>
+                <span id="role1"></span>
+            </div>
+        
+            <div class="userContainer" id="userContainer2">
+                <p class="username">Username</p>
+                <span id="username2"></span>
+                <p class="rank">Rank</p>
+                <span id="rank2"></span>
+                <p class="role">Role</p>
+                <span id="role2"></span>
+            </div>
+        
+            <div class="userContainer" id="userContainer3">
+                <p class="username">Username</p>
+                <span id="username3"></span>
+                <p class="rank">Rank</p>
+                <span id="rank3"></span>
+                <p class="role">Role</p>
+                <span id="role3"></span>
+            </div>
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
