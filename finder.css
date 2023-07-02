@@ -24,7 +24,10 @@ img{
    
 }
 
-
+.gameChoice input{
+   background: none;
+   color: white;
+}
 
 .stars {
     display: inline-block;
