@@ -46,7 +46,7 @@ const firebaseConfig = {
         // Done
         alert('Login Successful')
 
-        window.location.href = '/HomePage/home.html';
+        window.location.href = 'home.html';
 
       })
       .catch(function(error){
