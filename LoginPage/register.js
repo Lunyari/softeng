@@ -55,6 +55,7 @@ function register () {
       rank : rank,
       last_login : Date.now()
     }
+    
 
     // Push to Firebase Database
     database_ref.child('users/' + user.uid).set(user_data)
