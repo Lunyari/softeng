@@ -23,6 +23,7 @@ function register () {
   password = document.getElementById('password').value
   username = document.getElementById('username').value
   
+  
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
