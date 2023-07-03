@@ -59,8 +59,9 @@ function register () {
 
     // Push to Firebase Database
     database_ref.child('users/' + user.uid).set(user_data)
-
+    
     // Done
+    console.log(username,password,email,game,role,rank)
     alert("Account Registered")
     window.location.href = 'login.html';
   })
