@@ -1,3 +1,37 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if(isset($_POST['submit'])){
+
+   $name = mysqli_real_escape_string($conn, $_POST['name']);
+   $email = mysqli_real_escape_string($conn, $_POST['email']);
+   $password = md5($_POST['password']);
+   $game = $_POST['game'];
+   $role = mysqli_real_escape_string($conn, $_POST['role']);
+   $rank = mysqli_real_escape_string($conn, $_POST['rank']);
+
+   $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$password' ";
+
+   $result = mysqli_query($conn, $select);
+
+   if(mysqli_num_rows($result) > 0){
+
+      $row = mysqli_fetch_array($result);
+
+         header('location:home.html');
+
+     
+   }else{
+      $error[] = 'incorrect email or password!';
+   }
+
+};
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,15 +62,10 @@
             </div>
 
             <div class="pass">Forgot Password?</div>
-            <button onclick="login()">Login</button>
+            <input type="submit" name="submit" value="Login">
             <div class="signupLink">
                 <p><a href="Register.html">Sign Up</a> to get started</p>
             </div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>   
-    <script src="./login.js"></script>
-
 </body>
 </html>

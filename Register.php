@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
 
         $insert = "INSERT INTO user_form(username, email, password, game, role, rank) VALUES('$username','$email','$password','$game','$role','$rank')";
          mysqli_query($conn, $insert);
-         header('location:login_form.php');
+         header('location:Login.php');
     
    }
 

@@ -1,3 +1,14 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+   header('location:login_form.php');
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
