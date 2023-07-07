@@ -85,7 +85,7 @@
   }
   .game-button2 {
     top: 9px;
-    left: 1460px;
+    right: 138px;
     width: 144px;
     height: 37px;
     position: absolute;
@@ -114,6 +114,44 @@
     height: 98px;
     position: absolute;
     object-fit: cover;
+  }
+  @media(max-width: 1600px) {
+    .game-text {
+      top: 101px;
+      left: 746px;
+    }
+    .game-image {
+      top: 234px;
+      left: 1010px;
+    }
+    .game-image1 {
+      top: 228px;
+      left: 652px;
+    }
+    .game-image2 {
+      top: 237px;
+      left: 307px;
+    }
+    .game-image3 {
+      top: -57px;
+      left: 591px;
+    }
+    .game-button1 {
+      top: 17px;
+      right: 134px;
+    }
+    .game-button2 {
+      top: 16px;
+      left: 1173px;
+    }
+    .game-button3 {
+      top: 706px;
+      left: 701px;
+    }
+    .game-image4 {
+      top: 10px;
+      right: 10px;
+    }
   }
   @media(max-width: 1200px) {
     .game-image4 {
