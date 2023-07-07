@@ -1,3 +1,36 @@
+<?php
+
+@include 'config.php';
+
+if(isset($_POST['submit'])){
+
+   $username = mysqli_real_escape_string($conn, $_POST['username']);
+   $email = mysqli_real_escape_string($conn, $_POST['email']);
+   $password = md5($_POST['password']);
+   $game = $_POST['game'];
+   $role = mysqli_real_escape_string($conn, $_POST['role']);
+   $rank = mysqli_real_escape_string($conn, $_POST['rank']);
+
+   $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$password' ";
+
+   $result = mysqli_query($conn, $select);
+
+   if(mysqli_num_rows($result) > 0){
+
+      $error[] = 'user already exist!';
+
+   }else{
+
+        $insert = "INSERT INTO user_form(username, email, password, game, role, rank) VALUES('$username','$email','$password','$game','$role','$rank')";
+         mysqli_query($conn, $insert);
+         header('location:login_form.php');
+    
+   }
+
+};
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +48,17 @@
 <body>
     <img src="nexusParty.png" alt="Nexus Party">
     <div class="signUpbox">
-        <h1>Sign Up</h1>
         
-            <div class="alert">Your Account has been Created</div>
-
+        
+            <form action="" method="post">
+            <h1>Sign Up</h1>
+            <?php
+                if(isset($error)){
+                    foreach($error as $error){
+                     echo '<span class="error-msg">'.$error.'</span>';
+                     };
+                 };
+            ?>
             <div class="txtField">
                 <input type="text" id="email" name="email" required>
                 <span></span>
@@ -38,9 +78,11 @@
             </div>
 
             <div class="txtField">
-                <input type="text" id="game" name="game" required>
-                <span></span>
-                <label>What game do you play?</label>
+            <select name="game">
+                <option value="League of Legends">League of Legends</option>
+                <option value="Valorant">Valorant</option>
+                <option value="CSGO">CSGO</option>
+            </select>
             </div>
 
             <div class="txtField">
@@ -55,14 +97,12 @@
                 <label>What is your rank?</label>
             </div>
             
-                <button onclick="register()">Sign Up</button>
-       
+                <input type="submit" name="submit" value="Register">
+                <p>Already have an account? <a href="login_form.php">Login now</a></p>
+             </form>
     </div>
 </body>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>   
-    <script src="./register.js"></script>
+ 
     
 
 </html>
