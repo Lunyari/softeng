@@ -1,12 +1,10 @@
 <?php
-
-@include 'config.php';
-
 session_start();
 
-   header('location:login_form.php');
-
-
+if (!isset($_SESSION['email'])) {
+    header('Location: home.php');
+    exit();
+}
 ?>
 
 <!DOCTYPE html>

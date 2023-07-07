@@ -1,34 +1,23 @@
 <?php
+session_start();
 
 @include 'config.php';
 
-session_start();
-
-if(isset($_POST['submit'])){
-
-   $name = mysqli_real_escape_string($conn, $_POST['name']);
+if (isset($_POST['submit'])) {
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $password = md5($_POST['password']);
-   $game = $_POST['game'];
-   $role = mysqli_real_escape_string($conn, $_POST['role']);
-   $rank = mysqli_real_escape_string($conn, $_POST['rank']);
 
-   $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$password' ";
-
+   $select = "SELECT * FROM user_form WHERE email = '$email' AND password = '$password'";
    $result = mysqli_query($conn, $select);
 
-   if(mysqli_num_rows($result) > 0){
-
-      $row = mysqli_fetch_array($result);
-
-         header('location:home.html');
-
-     
-   }else{
-      $error[] = 'incorrect email or password!';
+   if (mysqli_num_rows($result) > 0) {
+      $_SESSION['email'] = $email; // Store email in session variable
+      header('Location: home.php');
+      exit();
+   } else {
+      $error = 'Incorrect email or password!';
    }
-
-};
+}
 ?>
 
 
@@ -48,6 +37,7 @@ if(isset($_POST['submit'])){
 <body>
     <img src="nexusParty.png" alt="Nexus Party">
     <div class="loginbox">
+        <form action="home.php" method="post">
         <h1>Login</h1>
             <div class="txtField">
                 <input type="text" id="email" name="email" required>
@@ -66,6 +56,8 @@ if(isset($_POST['submit'])){
             <div class="signupLink">
                 <p><a href="Register.php">Sign Up</a> to get started</p>
             </div>
+        </form>
+        
     </div>
 </body>
 </html>
