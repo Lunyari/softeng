@@ -46,7 +46,7 @@ if(isset($_POST['submit'])){
 
 </head>
 <body>
-    <img src="nexusParty.png" alt="Nexus Party">
+    <img src="/resources/nexusParty.png" alt="Nexus Party">
     <div class="signUpbox">
         
         
@@ -98,7 +98,7 @@ if(isset($_POST['submit'])){
             </div>
             
                 <input type="submit" name="submit" value="Register">
-                <p>Already have an account? <a href="login_form.php">Login now</a></p>
+                <p>Already have an account? <a href="/php/Login.php">Login now</a></p>
              </form>
     </div>
 </body>

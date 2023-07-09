@@ -14,7 +14,7 @@
         <link href="./about.css" rel="stylesheet" />
         <div class="about-container">
           <div class="about-container1">
-            <img alt="image" src="/nexus_p_arty-1500w.jpg" class="about-image" />
+            <img alt="image" src="/resources/nexus_p_arty.jpg" class="about-image" />
           </div>
           <h1 class="about-text">What is Nexus Party?</h1>
           <span class="about-text01">
@@ -75,17 +75,17 @@
           <div class="about-container4">
             <img
               alt="image"
-              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHByb2ZpbGV8ZW58MHx8fHwxNjg4ODUyNzc5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;h=800"
+              src="/resources/Clarence pic.jpg"
               class="about-image1"
             />
             <img
               alt="image"
-              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHByb2ZpbGV8ZW58MHx8fHwxNjg4ODUyNzc5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;h=800"
+              src="/resources/Jacques pic.jpg"
               class="about-image2"
             />
             <img
               alt="image"
-              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHByb2ZpbGV8ZW58MHx8fHwxNjg4ODUyNzc5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;h=800"
+              src="/resources/Joaquin.jpg"
               class="about-image3"
             />
           </div>
