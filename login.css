@@ -48,14 +48,6 @@
     position: absolute;
     font-size: 50px;
   }
-  .league-of-legends-container3 {
-    flex: 0 0 auto;
-    width: 100%;
-    border: 2px dashed rgba(120, 120, 120, 0.4);
-    height: 100px;
-    display: flex;
-    align-items: flex-start;
-  }
   @media(max-width: 1500px) {
     .league-of-legends-container {
       border-color: #ef0ff1;
@@ -100,18 +92,11 @@
       height: 631px;
     }
     .league-of-legends-text09 {
-      top: 62px;
-      left: 472px;
+      top: 114px;
+      left: 487px;
       color: var(--dl-color-gray-white);
       position: absolute;
       font-size: 50px;
-    }
-    .league-of-legends-container3 {
-      top: 11px;
-      left: 456px;
-      width: 481px;
-      height: 162px;
-      position: absolute;
     }
   }
   
