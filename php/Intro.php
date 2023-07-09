@@ -18,6 +18,6 @@
 
             <button onclick="openLoginPage()">Get Started!</a>
     </div>
-    <script src="./intro.js"></script>
+    <script src="/javascript/intro.js"></script>
 </body>
 </html>
