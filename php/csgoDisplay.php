@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="leagueDisplay.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/csgoDisplay.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
@@ -76,14 +76,6 @@
             }
             $conn->close();
         ?>
-      <div id="userList" class="csgo-container5">
-        <p id="username" class="csgo-text">Username</p>
-        <p id="game" class="csgo-text1">Game</p>
-        <p id="role" class="csgo-text2">Role</p>
-        <p id="rank" class="csgo-text3">Rank</p>
-      </div>
-    </div>
-    <p id="role" class="csgo-text4">Role</p>
   </div>
 </div>
          
