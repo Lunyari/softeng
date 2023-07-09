@@ -1,85 +1,80 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Nexus Party</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/home.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+    <title>Game Page</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Nexus Party</h1>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<div>
+  <link href="./home.css" rel="stylesheet" />
+  <div class="home-container">
+    <div class="home-container1">
+      <img
+        src="/resources/nexusParty.png"
+        alt="image"
+        class="home-image"
+      />
+      <div class="home-container2">
+        <a href="about.html" class="home-navlink">About</a>
+        <a href="/php/games.php" class="home-navlink1">Games</a>
+        <a
+          href="https://example.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="home-link"
+        >
+          Features
+        </a>
+      </div>
+    </div>
+    <div class="home-container3">
+      <p class="home-text">League of Legends</p>
+      <p class="home-text01">Valorant</p>
+      <p class="home-text02">Counter Strike: GO</p>
+    </div>
+    <div class="home-container4">
+      <div class="home-container5">
+        <span></span>
+        <span class="home-text04">
+          <span class="home-text05">Hi [username]</span>
+          <br />
+          <span>Check out </span>
+          <br />
+          <span>highly rated</span>
+          <br />
+          <span>players</span>
+          <br />
+        </span>
+        <button type="button" class="home-button button">Click Here</button>
+      </div>
+      <div class="home-container6">
+        <iframe
+          src="https://www.youtube.com/embed/sUoSPryMZr0?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0"
+          class="home-iframe"
+        ></iframe>
+      </div>
+    </div>
+    <div class="home-container7">
+      <span></span>
+      <span class="home-text14">
+        <span class="home-text15">Hi [username]</span>
+        <br />
+        <span>Let&apos;s get you a</span>
+        <br />
+        <span>playmate!</span>
+        <br />
+      </span>
+      <button type="button" class="home-button1 button">Click Here</button>
+    </div>
+  </div>
+</div>
 
-    <main>
-        <section id="hero">
-            <h2>Connect with Gamers</h2>
-            <p>Find and team up with fellow gamers for the ultimate gaming experience.</p>
-            <a href="finder.html" class="cta-button">Start Looking!</a>
-        </section>
-
-        <section id="games">
-            <div class="row">
-                <div class="column">
-                  <img src="csgo.jpg" alt="csgo" style="width:100%">
-                  <a href="csgo.html" class="cta-button">CSGO</a>
-                </div>
-                <div class="column">
-                  <img src="valorant.jpg" alt="valo" style="width:100%">
-                  <a href="valorant.html" class="cta-button">Valorant</a>
-                </div>
-                <div class="column">
-                  <img src="league.jpg" alt="lol" style="width:100%">
-                  <a href="league.html" class="cta-button">League of Legends</a>
-                </div>
-              </div>
-        </section>
-
-        <section id="features">
-            <h2>Features</h2>
-            <div class="feature">
-                <h3>Game Matching</h3>
-            </div>
-                <p>Discover gamers who play the same games as you and team up for multiplayer adventures.</p>
-
-            <div class="feature">
-                <h3>Chat and Voice</h3>
-            </div>   
-                <p>Communicate with your gaming buddies through real-time chat and voice channels.</p>
-            
-        </section>
-
-        <section id="about">
-            <h2>About Nexus Party</h2>
-            <p>Nexus Party is a platform designed to bring gamers together and enhance their gaming experiences. Whether you're looking for new friends, competitive matches, or simply a place to hang out, Nexus Party has you covered.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Nexus Party. All rights reserved.</p>
-    </footer>
 </body>
 </html>

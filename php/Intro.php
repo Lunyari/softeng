@@ -15,7 +15,6 @@
         <h1>Your one-stop 
             for finding 
             players</h1>
-
             <button onclick="openLoginPage()">Get Started!</a>
     </div>
     <script src="/javascript/intro.js"></script>
