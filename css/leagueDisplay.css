@@ -83,6 +83,8 @@ body{
   align-self: center;
   align-items: flex-start;
   justify-content: center;
+  border: solid 5px;
+  border-color: #FF0F7B;
 }
 .lol-container5 {
   gap: 24px;
@@ -91,6 +93,8 @@ body{
   height: 305px;
   display: flex;
   flex-wrap: wrap;
+  border: solid 5px;
+  border-color: #FF0F7B;
   align-items: center;
   flex-direction: column;
   justify-content: center;

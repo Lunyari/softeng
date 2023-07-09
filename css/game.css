@@ -1,165 +1,142 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
 .game-container {
-    width: 100%;
-    display: flex;
-    overflow: auto;
-    min-height: 100vh;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: #030c25;
-  }
-  .game-container1 {
-    width: 100%;
-    height: 997px;
-    display: flex;
-    position: relative;
-    align-items: flex-end;
-    border-color: #f300b6;
-    border-width: 3px;
-    justify-content: center;
-  }
-  .game-text {
-    top: 112px;
-    left: 916px;
-    color: #ec0177;
-    width: 120px;
-    height: 29px;
-    position: absolute;
-    font-size: 2em;
-  }
-  .game-image {
-    top: 237px;
-    left: 1241px;
-    width: 264px;
-    height: 405px;
-    position: absolute;
-    object-fit: fill;
-  }
-  .game-image1 {
-    top: 238px;
-    left: 826px;
-    width: 253px;
-    height: 397px;
-    position: absolute;
-    object-fit: fill;
-  }
-  .game-image2 {
-    top: 244px;
-    left: 374px;
-    width: 264px;
-    height: 394px;
-    position: absolute;
-    object-fit: fill;
-  }
-  .game-image3 {
-    top: -53px;
-    left: 766px;
-    width: 407px;
-    height: 363px;
-    position: absolute;
-    object-fit: fill;
-  }
-  .game-button {
-    top: 17px;
-    left: 21px;
-    width: 144px;
-    height: 37px;
-    position: absolute;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    background-color: #f300e3;
-  }
-  .game-button1 {
-    top: 9px;
-    right: 138px;
-    width: 144px;
-    height: 37px;
-    position: absolute;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    background-color: #f300e3;
-  }
-  .game-button2 {
-    top: 9px;
-    right: 138px;
-    width: 144px;
-    height: 37px;
-    position: absolute;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    background-color: #f300e3;
-  }
-  .game-button3 {
-    top: 735px;
-    left: 891px;
-    width: 160px;
-    height: 42px;
-    position: absolute;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    background-color: #0039f3;
-  }
-  .game-image4 {
-    top: 11px;
-    right: 17px;
-    width: 114px;
-    height: 98px;
-    position: absolute;
-    object-fit: cover;
-  }
-  @media(max-width: 1600px) {
-    .game-text {
-      top: 101px;
-      left: 746px;
-    }
-    .game-image {
-      top: 234px;
-      left: 1010px;
-    }
-    .game-image1 {
-      top: 228px;
-      left: 652px;
-    }
-    .game-image2 {
-      top: 237px;
-      left: 307px;
-    }
-    .game-image3 {
-      top: -57px;
-      left: 591px;
-    }
-    .game-button1 {
-      top: 17px;
-      right: 134px;
-    }
-    .game-button2 {
-      top: 19px;
-      left: 1149px;
-    }
-    .game-button3 {
-      top: 706px;
-      left: 701px;
-    }
-    .game-image4 {
-      top: 10px;
-      right: 10px;
-    }
-  }
-  @media(max-width: 1200px) {
-    .game-image4 {
-      top: 10px;
-      right: 14px;
-      width: 76px;
-      height: 72px;
-      position: absolute;
-    }
-  }
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #030c25;
+}
+.game-container1 {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.game-container2 {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.game-button {
+  color: white;
+  width: 149px;
+  height: 56px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: rgb(255, 15, 123);
+}
+.game-container3 {
+  flex: 0 0 auto;
+  width: 700px;
+  height: 140px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.game-image {
+  top: -140px;
+  right: 12px;
+  width: 468px;
+  height: 560px;
+  position: absolute;
+  object-fit: cover;
+}
+.game-container4 {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.game-button1 {
+  color: white;
+  width: 164px;
+  height: 70px;
+  font-size: 20px;
+  margin-left: 96px;
+  border-radius: 20px;
+  background-color: rgb(255, 15, 123);
+}
+.game-button2 {
+  color: white;
+  width: 180px;
+  height: 65px;
+  font-size: 20px;
+  margin-left: 64px;
+  margin-right: 48px;
+  border-radius: 20px;
+  background-color: rgb(255, 15, 123);
+}
+.game-container5 {
+  width: 100%;
+  height: 62px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.game-text {
+  color: rgb(255, 15, 123);
+  font-size: 40px;
+}
+.game-container6 {
+  width: 100%;
+  height: 756px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-self: center;
+  align-items: flex-end;
+  padding-left: 96px;
+  padding-right: 96px;
+  justify-content: center;
+}
+.game-image1 {
+  top: 50px;
+  left: 600px;
+  width: 330px;
+  height: 500px;
+  position: absolute;
+  object-fit: cover;
+}
+.game-image2 {
+  top: 50px;
+  right: 100px;
+  width: 330px;
+  height: 500px;
+  position: absolute;
+  object-fit: cover;
+}
+.game-image3 {
+  top: 50px;
+  left: 100px;
+  width: 330px;
+  height: 500px;
+  position: absolute;
+  object-fit: cover;
+}
+.game-button3 {
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 48px;
+  background-color: rgb(255, 15, 123);
+}
+
   

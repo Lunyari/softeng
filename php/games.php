@@ -1,46 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/game.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+    <title>Game Page</title>
+</head>
+<body>
 <div>
-    <link href="./game.css" rel="stylesheet" />
-    <div class="game-container">
-      <div class="game-container1">
-        <h1 class="game-text">GAMES</h1>
-        <img alt="image" src="/csgo-500h.png" class="game-image" />
-        <img alt="image" src="/league-300w.jpg" class="game-image1" />
-        <img alt="image" src="/valoratn-400h.jpg" class="game-image2" />
+  <div class="game-container">
+    <div class="game-container1">
+      <div class="game-container2">
+        <button type="button" class="game-button button">Home</button>
+      </div>
+      <div class="game-container3">
         <img
           alt="image"
-          src="/nexus_party_no_background-500w.png"
-          class="game-image3"
+          src="/resources/nexusParty.png"
+          class="game-image"
         />
-        <button type="button" class="game-button button">
-          <span>
-            <span>Home</span>
-            <br />
-          </span>
-        </button>
-        <button type="button" class="game-button1 button">
-          <span>
-            <span>Messages</span>
-            <br />
-          </span>
-        </button>
-        <button type="button" class="game-button2 button">
-          <span>
-            <span>Notification</span>
-            <br />
-          </span>
-        </button>
-        <button type="button" class="game-button3 button">
-          <span>
-            <span>View More &gt;&gt;</span>
-            <br />
-          </span>
-        </button>
       </div>
-      <img
-        alt="image"
-        src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fCUyMHByb2ZpbGUlMjB8ZW58MHx8fHwxNjg4NzQ5NjU1fDA&amp;ixlib=rb-4.0.3&amp;w=200"
-        class="game-image4"
-      />
+      <div class="game-container4">
+        <button type="button" class="game-button1 button">Messages</button>
+        <button type="button" class="game-button2 button">Notifications</button>
+      </div>
+    </div>
+    <div class="game-container5"><span class="game-text">GAMES</span></div>
+    <div class="game-container6">
+      <img alt="image" src="/resources/valorant.jpg" class="game-image1" />
+      <img alt="image" src="/resources/league.jpg" class="game-image2" />
+      <img alt="image" src="/resources/csgo.jpg" class="game-image3" />
+      <button type="button" class="game-button3 button">View More</button>
     </div>
   </div>
+</div>
+</body>
+</html>
+
   
