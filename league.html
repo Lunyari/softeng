@@ -12,45 +12,36 @@
 
 </head>
 <body>
-    <img src="nexusParty.png" alt="Nexus Party">
-    <div class="loginbox">
-        <h1>League Of Legends</h1>
-            <div class="txtField">
-                <input type="text" id="IGN" name="IGN" required>
-                <span></span>
-                <label>Enter IGN(In Game Name)</label>
-            </div>
-
-            <div class="rank">
-                <h1>Enter Rank</h1>
-                <input list="rank" name ="rank" required>
-                <datalist id="rank">
-                    <option value="Iron"></option>
-                    <option value="Bronze"></option>
-                    <option value="Silver"></option>
-                    <option value="Gold"></option>
-                    <option value="Platinum"></option>
-                    <option value="Diamond"></option>
-                    <option value="Master"></option>
-                    <option value="Grandmaster"></option>
-                    <option value="Challenger"></option>
-                </datalist>
-               
-            </div>
-
-            <div class="roles">
-                <h1>Role</h1>
-                <input list="roles" name="roles">
-                    <datalist id="roles">
-                        <option value="Carry"></option>
-                        <option value="Support"></option>
-                    </datalist>
-            </div>
-
-            
-            <button onclick="getStarted()">Save</button>
-            
-    </div>
+    <div>
+        <link href="./league-of-legends.css" rel="stylesheet" />
+        <div class="league-of-legends-container">
+          <span class="league-of-legends-text">League Of Legends</span>
+          <img
+            alt="image"
+            src="/nexus_party_no_background-700w.png"
+            class="league-of-legends-image"
+          />
+          <button type="button" class="league-of-legends-button button">
+            <span>
+              <span>Messages</span>
+              <br />
+            </span>
+          </button>
+          <button type="button" class="league-of-legends-button1 button">
+            <span>
+              <span>Home</span>
+              <br />
+            </span>
+          </button>
+          <button type="button" class="button league-of-legends-button2">
+            <span>
+              <span>Notification</span>
+              <br />
+            </span>
+          </button>
+          <div class="league-of-legends-container1"></div>
+        </div>
+      </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>   
