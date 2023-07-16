@@ -2,9 +2,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
-    color: white;
 }
-.csgo-container {
+
+.gc-container {
     width: 100%;
     display: flex;
     overflow: auto;
@@ -16,17 +16,18 @@ body{
     justify-content: flex-start;
     background-color: #030c25;
   }
-  .csgo-container1 {
+  .gc-container1 {
     flex: 0 0 auto;
     width: 100%;
     display: flex;
     position: relative;
     align-items: center;
+    border-bottom: solid;
     border-color: #ff0f7b;
     border-width: 5px;
     justify-content: flex-start;
   }
-  .csgo-container2 {
+  .gc-container2 {
     flex: 0 0 auto;
     width: 276px;
     height: 100px;
@@ -34,36 +35,37 @@ body{
     align-items: center;
     justify-content: center;
   }
-  .csgo-navlink {
+  .gc-navlink {
     width: 137px;
     height: 46px;
+    align-self: center;
     text-align: center;
     text-decoration: none;
-    background-color: #FF0F7B;
+    background-color: rgb(255, 15, 123);
   }
-  .csgo-container3 {
+  .gc-container3 {
     flex: 0 0 auto;
     width: 1222px;
     height: 100px;
     display: flex;
     align-items: center;
-    border-color: gray;
+    border-color: black;
     border-width: 1px;
     justify-content: flex-end;
   }
-  .csgo-button {
-    width: 137px;
-    height: 46px;
+  .gc-button {
+    width: 146px;
+    height: 43px;
     margin-right: 24px;
     background-color: #FF0F7B;
   }
-  .csgo-button1 {
-    width: 137px;
-    height: 46px;
-    margin-right: 24px;
+  .gc-button1 {
+    width: 146px;
+    height: 43px;
+    margin-right: 32px;
     background-color: #FF0F7B;
   }
-  .csgo-image {
+  .gc-image {
     top: 3px;
     left: 609px;
     width: 279px;
@@ -71,48 +73,52 @@ body{
     position: absolute;
     object-fit: cover;
   }
-  .csgo-heading {
+  .gc-heading {
     color: white;
     align-self: center;
     margin-top: 24px;
   }
-  .csgo-container4 {
+  .gc-container4 {
     width: 1120px;
     height: 695px;
     display: flex;
     flex-wrap: wrap;
+    border: solid 2px #FF0F7B;
     align-self: center;
     align-items: flex-start;
     justify-content: center;
-    border: solid 5px;
-    border-color: #FF0F7B;
   }
-  .csgo-container5 {
+  .gc-container5 {
     gap: 24px;
     flex: 0 0 auto;
     width: 212px;
     height: 305px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
+    border: solid 2px #FF0F7B;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border: solid 5px;
-    border-color: #FF0F7B;
   }
-  .csgo-text {
+  .gc-text2 {
     color: white;
   }
-  .csgo-text1 {
+  .gc-text3 {
     color: white;
   }
-  .csgo-text2 {
+  .gc-text4 {
     color: white;
   }
-  .csgo-text3 {
+  .gc-text5 {
     color: white;
   }
-  .csgo-text4 {
-    color: white;
+  .gc-navlink1 {
+    width: 146px;
+    height: 43px;
+    align-self: center;
+    margin-bottom: 36px;
+    text-decoration: none;
+    background-color: rgb(255, 15, 123);
   }
   

@@ -46,7 +46,7 @@ body{
   height: 100px;
   display: flex;
   align-items: center;
-  border-color: var(--dl-color-gray-black);
+  border-color: gray;
   border-width: 1px;
   justify-content: flex-end;
 }

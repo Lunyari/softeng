@@ -43,10 +43,10 @@
           alt="image"
           class="profile-page-image2"
         />
-        <span class="profile-page-text">User Name</span>
-        <span class="profile-page-text1">Game</span>
-        <span class="profile-page-text2">Rank</span>
-        <span class="profile-page-text3">Role</span>
+        <span class="profile-page-text">Gamer</span>
+        <span class="profile-page-text1">CSGO</span>
+        <span class="profile-page-text2">Gold</span>
+        <span class="profile-page-text3">Carry</span>
         <div class="profile-page-container6"><span>Comments</span></div>
         <div class="profile-page-container7">
           <button type="button" class="profile-page-button3 button">Add</button>

@@ -11,11 +11,24 @@ if (isset($_POST['submit'])) {
    $result = mysqli_query($conn, $select);
 
    if (mysqli_num_rows($result) > 0) {
-      $_SESSION['email'] = $email; // Store email in session variable
-      header('Location: home.php');
+        $row = mysqli_fetch_assoc($result);
+      if($row['email'] === $email && $row['password'] === $password){
+        $_SESSION['id']  = $row['id'];
+        $_SESSION['username']  = $row['username'];
+        $_SESSION['game']  = $row['game'];
+        $_SESSION['rank']  = $row['rank'];
+        $_SESSION['role']  = $row['role'];
+        header('Location: php/home.php');
+         exit();
+      }else {
+        $error = 'Incorrect email or password!';
+      header('Location: php/Login.php');
       exit();
+   }
    } else {
-      $error = 'Incorrect email or password!';
+    $error = 'User does not exist!';
+    header('Location: php/Login.php');
+    exit();
    }
 }
 ?>
@@ -35,7 +48,7 @@ if (isset($_POST['submit'])) {
 
 </head>
 <body>
-    <img src="nexusParty.png" alt="Nexus Party">
+    <img src="/resources/nexusParty.png" alt="Nexus Party">
     <div class="loginbox">
         <form action="home.php" method="post">
         <h1>Login</h1>
@@ -54,7 +67,7 @@ if (isset($_POST['submit'])) {
             <div class="pass">Forgot Password?</div>
             <input type="submit" name="submit" value="Login">
             <div class="signupLink">
-                <p><a href="Register.php">Sign Up</a> to get started</p>
+                <p><a href="/php/Register.php">Sign Up</a> to get started</p>
             </div>
         </form>
         

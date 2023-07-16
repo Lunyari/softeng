@@ -1,4 +1,12 @@
+<?php
+session_start();
+@include 'config.php';
 
+if(isset($_SESSION['id'])&& isset($_SESSION['username'])){
+  $username = $_SESSION['username'];
+
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +25,13 @@
   <div class="home-container">
     <div class="home-container1">
       <img
-        src="/resources/nexusParty.png"
         alt="image"
+        src="/resources/nexusParty.png"
         class="home-image"
       />
       <div class="home-container2">
-        <a href="about.html" class="home-navlink">About</a>
+      <a href="/php/profilePage.php" class="home-navlink">Profile</a>
+        <a href="/php/about.php" class="home-navlink">About</a>
         <a href="/php/games.php" class="home-navlink1">Games</a>
         <a
           href="https://example.com"
@@ -35,24 +44,28 @@
       </div>
     </div>
     <div class="home-container3">
-      <p class="home-text">League of Legends</p>
-      <p class="home-text01">Valorant</p>
-      <p class="home-text02">Counter Strike: GO</p>
+      <a href="/php/leagueDisplay.php" class="home-navlink2">
+        <p class="home-text">League of Legends</p>
+      </a>
+      <a href="/php/valorantDisplay.php" class="home-navlink3">
+        <p class="home-text01">Valorant</p>
+      </a>
+      <a href="/php/csgoDisplay.php" class="home-navlink4">
+        <p class="home-text02">Counter Strike: GO</p>
+      </a>
     </div>
     <div class="home-container4">
       <div class="home-container5">
         <span></span>
         <span class="home-text04">
-          <span class="home-text05">Hi [username]</span>
+          <span class="home-text05">Hi Gamer!</span>
           <br />
-          <span>Check out </span>
+          <span>Find Some</span>
           <br />
-          <span>highly rated</span>
-          <br />
-          <span>players</span>
+          <span>Group Chats!</span>
           <br />
         </span>
-        <button type="button" class="home-button button">Click Here</button>
+        <a href="/php/groupchatDisplay.php" class="home-navlink5 button">Click Here</a>
       </div>
       <div class="home-container6">
         <iframe
@@ -63,18 +76,19 @@
     </div>
     <div class="home-container7">
       <span></span>
-      <span class="home-text14">
-        <span class="home-text15">Hi [username]</span>
+      <span class="home-text12">
+        <span class="home-text13">Hi Gamer!</span>
         <br />
         <span>Let&apos;s get you a</span>
         <br />
         <span>playmate!</span>
         <br />
       </span>
-      <button type="button" class="home-button1 button">Click Here</button>
+      <a href="valorant.html" class="home-navlink6 button">Click Here</a>
     </div>
   </div>
 </div>
+
 
 </body>
 </html>
